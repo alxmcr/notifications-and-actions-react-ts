@@ -1,0 +1,15 @@
+@import '../../variables';
+
+.app-button {
+  &--error {
+    background-color: $error;
+  }
+
+  &--info {
+    background-color: $info;
+  }
+
+  &--success {
+    background-color: $success;
+  }
+}
