@@ -1,4 +1,5 @@
 import AppButton from '../../AppButton';
+import './ActionsSection.scss';
 
 export default function ActionsSection() {
   const handleLogin = () => {
