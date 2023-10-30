@@ -3,7 +3,7 @@ import './AppButton.scss';
 type AppButtonProps = {
   text: string;
   level: 'success' | 'info' | 'error';
-  handleClick: () => void;
+  handleClick?: () => void;
 };
 
 export default function AppButton({
@@ -11,13 +11,15 @@ export default function AppButton({
   level = 'info',
   handleClick,
 }: AppButtonProps) {
-  return (
-    <button
-      type="button"
-      className={`app-button app-button--${level}`}
-      onClick={handleClick}
-    >
-      {text}
-    </button>
-  );
+  if (handleClick) {
+    return (
+      <button
+        type="button"
+        className={`app-button app-button--${level}`}
+        onClick={handleClick}
+      >
+        {text}
+      </button>
+    );
+  }
 }

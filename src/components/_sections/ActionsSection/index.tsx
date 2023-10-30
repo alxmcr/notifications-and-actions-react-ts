@@ -20,7 +20,7 @@ export default function ActionsSection() {
 
   return (
     <section className="actions">
-      <AppButton text="Login" level="info" handleClick={handleLogin} />
+      
       <AppButton text="Delete" level="error" handleClick={handleError} />
       <AppButton text="Completed" level="info" handleClick={handleCompleted} />
       <AppButton text="Create" level="info" handleClick={handleCreation} />

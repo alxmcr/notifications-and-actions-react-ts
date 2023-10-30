@@ -4,6 +4,8 @@ import './FormToken.scss';
 export default function FormToken() {
   const handlerSubmit = (ev: React.FormEvent) => {
     ev.preventDefault();
+
+    console.log('login');
   };
 
   return (
@@ -13,7 +15,9 @@ export default function FormToken() {
         <input type="text" className="form-token__input" required />
       </div>
       <div className="form-token__actions">
-        <button className="form-token__button">Login</button>
+        <button type="submit" className="form-token__button">
+          Login
+        </button>
       </div>
     </form>
   );

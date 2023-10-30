@@ -1,0 +1,20 @@
+@import '../../../variables';
+
+.form-token {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  &__button {
+    appearance: none;
+    background-color: transparent;
+    border: 0.5px solid $dark;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+
+    &:hover {
+      background-color: $dark;
+      color: $light;
+    }
+  }
+}
