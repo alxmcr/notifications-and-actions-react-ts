@@ -1,8 +1,7 @@
+import UsersProvider from '../../providers/UsersProvider';
 import FormTokenContainer from '../../reusables/_containers/FormTokenContainer';
-import ActionsSection from '../../components/_sections/ActionsSection';
 import UsersListContainer from '../../reusables/_containers/UsersListContainer';
 import './HomePage.scss';
-import UsersProvider from '../../providers/UsersProvider';
 
 export default function HomePage() {
   return (
@@ -13,7 +12,6 @@ export default function HomePage() {
         <hr />
         <UsersListContainer />
         <hr />
-        <ActionsSection />
       </main>
     </UsersProvider>
   );
