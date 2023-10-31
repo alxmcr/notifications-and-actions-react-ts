@@ -13,7 +13,7 @@ export default function UserItem({ user }: UserItemProps) {
   const [completed, setCompleted] = React.useState(false);
 
   const handlerDelete = (userId = '') => {
-    console.log('🚀 ~ file: index.tsx:16 ~ handlerDelete ~ userId:', userId);
+
     setUsers((prevUsers) =>
       prevUsers.filter((user) => user.id.value !== userId),
     );
@@ -26,7 +26,7 @@ export default function UserItem({ user }: UserItemProps) {
   };
 
   const handlerCompleted = (userId = '') => {
-    console.log('🚀 ~ file: index.tsx:24 ~ handlerCompleted ~ userId:', userId);
+  
     setCompleted(true);
 
     toast(
