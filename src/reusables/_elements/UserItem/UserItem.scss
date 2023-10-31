@@ -1,0 +1,16 @@
+@import '../../../variables';
+
+.task-item {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+
+  &__button {
+    appearance: none;
+    background-color: transparent;
+    border: 8px solid $dark;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+  }
+}

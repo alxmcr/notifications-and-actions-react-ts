@@ -1,4 +1,4 @@
-import FormToken from '../../forms/FormToken';
+import FormToken from '../../_forms/FormToken';
 
 export default function FormTokenContainer() {
   return (

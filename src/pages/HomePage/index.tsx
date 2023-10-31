@@ -1,4 +1,4 @@
-import FormTokenContainer from '../../components/_containers/FormTokenContainer';
+import FormTokenContainer from '../../reusables/_containers/FormTokenContainer';
 import TaskListContainer from '../../components/_containers/TaskListContainer';
 import ActionsSection from '../../components/_sections/ActionsSection';
 import './HomePage.scss';

@@ -14,7 +14,7 @@ export default function TaskItem({ id = '', text = '' }: TaskItemProps) {
   };
 
   const handlerCompleted = () => {
-    setCompleted(!completed);
+    setCompleted(true);
   };
 
   return (
