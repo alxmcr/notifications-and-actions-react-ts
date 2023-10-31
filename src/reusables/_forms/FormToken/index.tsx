@@ -13,8 +13,6 @@ export default function FormToken() {
   const handlerSubmit = (ev: React.FormEvent) => {
     ev.preventDefault();
 
-    console.log(`login ${token}`);
-
     toast.promise(verifyToken(token), {
       loading: `checking token... ${token}`,
       success: <p>'Token is valid!'</p>,
