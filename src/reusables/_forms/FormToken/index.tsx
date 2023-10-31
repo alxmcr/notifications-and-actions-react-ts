@@ -1,4 +1,6 @@
 import React from 'react';
+import toast from 'react-hot-toast';
+import { verifyToken } from '../../../services';
 import './FormToken.scss';
 
 export default function FormToken() {
@@ -12,6 +14,12 @@ export default function FormToken() {
     ev.preventDefault();
 
     console.log(`login ${token}`);
+
+    toast.promise(verifyToken(token), {
+      loading: `checking token... ${token}`,
+      success: <p>'Token is valid!'</p>,
+      error: <p>'Token is not valid!'</p>,
+    });
   };
 
   return (

@@ -1,6 +1,7 @@
 import UsersProvider from '../../providers/UsersProvider';
 import FormTokenContainer from '../../reusables/_containers/FormTokenContainer';
 import UsersListContainer from '../../reusables/_containers/UsersListContainer';
+import { Toaster } from 'react-hot-toast';
 import './HomePage.scss';
 
 export default function HomePage() {
@@ -12,6 +13,7 @@ export default function HomePage() {
         <hr />
         <UsersListContainer />
         <hr />
+        <Toaster />
       </main>
     </UsersProvider>
   );
